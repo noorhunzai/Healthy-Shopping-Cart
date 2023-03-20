@@ -1,0 +1,40 @@
+* {
+  color: #fff;
+}
+.parent {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+}
+.store-name {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin-top: 30px;
+}
+.item-heading {
+  margin-top: 40px;
+  border-bottom: 2px solid #fff;
+}
+.new,
+.quantity-input input {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.add {
+  padding: 8px 30px;
+}
+#grandTotal {
+  font-size: 100px;
+}
+#dollar-icon {
+  font-size: 100px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Hunza Super Store</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body>  
+    <div class='container-fluid parent'>
+      <div class="d-flex justify-content-center align-items-center store-name">
+        <h1 class='text-center'>Hunza Super Store</h1>
+      </div>
+      <div class='col-12 container'>
+        <table class='table table-responsive' id='shopping-cart'>
+          <thead>
+            <tr>
+              <th scope='col'>Item Name</th>
+              <th scope='col'>Item Price</th>
+              <th scope='col'>Item Quantity</th>
+              <th scope='col'>Sub Total</th> 
+              <th scope='col'>Remove Item</th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class='item-name'>Egg</td>
+              <td class='price'>2.20</td>
+              <td class='quantity quantity-input'><input type='number'></input></td>
+              <td class='subTotal'></td>
+              <td><button class='btn remove btn-danger'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item-name'>Milk</td>
+              <td class='price'>4.01</td>
+              <td class='quantity quantity-input'><input type='number'></input></td>
+              <td class='subTotal'></td>
+              <td><button class='btn remove btn-danger'><i>Remove</i></button></td>
+            </tr>
+            <tr>
+              <td class='item-name'>Bread</td>
+              <td class='price'>1.50</td>
+              <td class='quantity quantity-input'><input type='number'></input></td>
+              <td class='subTotal'></td>
+              <td><button class='btn remove btn-danger'><i>Remove</i></button></td>
+            </tr> 
+            <tr id='lastRow'>
+              <td class="col-5"><input class='form-control ' type='text' id='item-name' placeholder='new item-name' required></input></td>
+              <td class="col-5"><input class='form-control' type='number' id='price' placeholder='price' required></input></td>
+              <td colspan='2'></td>
+              <td class="col-2"><button class='btn btn-primary add'>Add</button></td>
+            </tr>
+          </tbody> 
+        </table>
+        <div>
+          <h1>Total Bill: <span id="dollar-icon">$</span><span Id='grandTotal'></span></h1>
+          <button class='btn btn-warning checkout'>Checkout</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
